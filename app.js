@@ -4,7 +4,6 @@
 //     console.log('Hello World!');
 //    }, 2000);
 
-// function getWords();
 
 //    console.log('Hello');
 
@@ -23,7 +22,7 @@
 
 // let countDown = (num, callback) => {
 //     setTimeout(() => {
-//         if (num > 0) {
+//         if (num > 1) {
 //             console.log(num);
 //             countDown(num - 1, callback);
 //         } else {
@@ -34,8 +33,28 @@
 // const done = () => {
 //     console.log("Job's Done");
 // };
-// countDown(5, done);
+// countDown(3, done);
 
-lunchTime = true; {
+// let lunchTime = true; {
 
+// }
+
+const orderMeSomeFood = () => {
+    return new Promise((resolve, reject) => {
+      if (lunchTime == true) {
+        let favorites = {
+            food: 'hot chicken',
+            drink: 'half and half tea'
 }
+    Promise.resolve(console.log(favorites));
+      } else {
+          let error = new Error ('Nope');
+          Promise.reject(error)
+      } 
+      
+    }
+
+    );
+
+  };
+  orderMeSomeFood()
